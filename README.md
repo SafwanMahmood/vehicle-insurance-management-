@@ -1,6 +1,7 @@
 # vehicle-insurance-management-
 A vehicle management system that predicts the risk and allots policy for customer.
 
+Clone the repo and follow the instructions.
 
 I suggest to create a virtual environment for this.
 
@@ -19,6 +20,9 @@ Create DB as:
 create schema insurance_db;
 use insurance_db;
 ```
+
+
+Django Server part:
 
 Run database migrations:
 ```
