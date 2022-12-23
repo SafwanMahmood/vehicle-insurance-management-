@@ -1,8 +1,13 @@
-<div class="container mt-4">
+
+<!DOCTYPE html>
+<html>
+<body style="background-color:khaki;">
+   <h1>Vehicle Insurance Portal</h1>
+   <div class="container mt-4">
     <div class="row">
         <div class="col-md-6">
     {% load crispy_forms_tags %}
-    <h4>Person Detail Form</h4>
+    <h4>Customer Insurance Detail Form</h4>
     <form method="post" action="http://127.0.0.1:8000/result/">
         {%csrf_token%}
         {%if form%}
@@ -28,36 +33,9 @@
         {%endif%}
 
     </form>
-        </div>
-        <div class="col-md-6">
-            <h4>Person Details</h4>
-            <table class="table table-striped bg-white">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Name</th>
-      <th scope="col">Surname</th>
-      <th scope="col">BirthDate</th>
-      <th scope="col">Sex</th>
-    </tr>
-  </thead>
-  <tbody>
-      {%for detail in detail%}
-<tr>
-      <th scope="row">{{forloop.counter}}</th>
-      <td>{{detail.Name}}</td>
-      <td>{{detail.Surname}}</td>
-      <td>{{detail.BirthDate}}</td>
-      <td>{{detail.Sex}}</td>
-        
-    </tr>
-       {%endfor%}
-  </tbody>
-            </table>
-            {%if detail|length == 0%}
-            <p class="text-center p-2 mb-0 text-danger bg-white">No Data to Display </p>
-            {%endif%}
-        </div>
     </div>
 
 </div>
+</body>
+</html>
+
