@@ -5,6 +5,12 @@ Clone the repo and follow the instructions.
 
 I suggest to create a virtual environment for this.
 
+Use the below command to create venv :
+```conda activate --name venv-name```
+
+To start the env :
+```conda activate env-name```
+
 To run:
 ```
 pip install -r requirements.txt
