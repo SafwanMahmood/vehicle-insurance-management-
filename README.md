@@ -14,6 +14,12 @@ Start the mysql server in a separate tab:
 mysql -u root
 ```
 
+Create DB as:
+```
+create schema insurance_db;
+use insurance_db;
+```
+
 Run database migrations:
 ```
 python3 manage.py makemigrations risk_app
