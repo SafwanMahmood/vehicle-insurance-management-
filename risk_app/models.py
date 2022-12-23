@@ -15,13 +15,13 @@ class Customer(models.Model):
     Gender = models.CharField(max_length=10,blank=True)
     Age = models.IntegerField(blank=True)
     BirthDate = models.DateTimeField(default=django.utils.timezone.now,blank=True)
-    Driving_License = models.IntegerField(blank=True)
+    Driving_License = models.CharField(max_length=10,blank=True)
     Region_Code = models.FloatField(blank=True)
-    Previously_Insured = models.IntegerField(blank=True)
+    Previously_Insured = models.CharField(max_length=10,blank=True)
     Vehicle_Age = models.IntegerField(blank=True)
     Vehicle_Damage = models.CharField(max_length=10,blank=True)
-    Annual_Premium = models.IntegerField(blank=True)
+    Annual_Premium = models.IntegerField(blank=True,null=True)
     Policy_Sales_Channel = models.IntegerField(blank=True)
     Vintage =  models.IntegerField(blank=True)
-    
+
 
